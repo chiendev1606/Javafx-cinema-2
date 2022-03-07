@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="985.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mepo.Controller.Home_view2Controller">
+    <children>
+        <AnchorPane layoutX="212.0" layoutY="6.0" maxHeight="700.0" prefHeight="688.0" prefWidth="767.0" styleClass="dark_background" stylesheets="@Style.css">
+            <children>
+            <GridPane layoutX="6.0" layoutY="8.0" maxHeight="379.0" maxWidth="773.0" minHeight="371.0" minWidth="755.0" prefHeight="371.0" prefWidth="761.0" style="-fx-border-color: linear-gradient(to bottom, #fbb034 0%, #ffdd00 50%); -fx-border-width: 5;" styleClass="textShadow">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <WebView fx:id="webviewTrailer" prefHeight="371.0" prefWidth="775.0" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="76.0" layoutY="382.0" maxHeight="379.0" maxWidth="773.0" minHeight="304.0" minWidth="634.0" prefHeight="304.0" prefWidth="645.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <HBox prefHeight="151.0" prefWidth="773.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <children>
+                        <HBox prefHeight="152.0" prefWidth="314.0">
+                           <children>
+                              <ImageView fx:id="imgMovie" fitHeight="131.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropShadow(three-pass-box, gold,20,0,0,0);">
+                                 <image>
+                                    <Image url="@../../img/1BIoJGKbXjdFDAqUEiA2VHqkK1Z.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox prefHeight="193.0" prefWidth="213.0">
+                                 <children>
+                                    <HBox prefHeight="80.0" prefWidth="203.0">
+                                       <children>
+                                          <ImageView fitHeight="41.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="textShadow" HBox.hgrow="ALWAYS">
+                                             <image>
+                                                <Image url="@../../img/icon/film-reel.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets top="20.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <Label fx:id="txtProductName" prefHeight="73.0" prefWidth="176.0" style="-fx-font-weight: bold; -fx-font-size: 12;" styleClass="text-gradient" text="Shang-Chisfsdffffffffffffsdf" textFill="#f7f7f7" wrapText="true" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="18.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="35.0" prefWidth="131.0">
+                                       <children>
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="textShadow">
+                                             <image>
+                                                <Image url="@../../img/icon/categories.png" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets left="5.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <Label fx:id="txtCategory" prefHeight="38.0" prefWidth="268.0" style="-fx-font-size: 12;" styleClass="text-gradient" text="Action" textFill="#f8f8f8" wrapText="true">
+                                             <font>
+                                                <Font name="Montserrat Medium Italic" size="18.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets top="15.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="152.0" prefWidth="265.0" GridPane.rowIndex="1">
+                     <children>
+                        <ScrollPane prefHeight="141.0" prefWidth="316.0">
+                           <content>
+                              <Text fx:id="txtDescription" fontSmoothingType="LCD" lineSpacing="1.5" strokeType="OUTSIDE" strokeWidth="0.0" text="   The film, based on Marvel Comics, will focus on Shang-Chi; 'Master of Kung-Fu'. Shang-Chi is a Kung Fu master, a master of martial arts. Shang-Chi's strength comes from thousands of hours of hard work and intense self-discipline. This martial arts superhero was trained by his own father to become a professional assassin and inherit his crime syndicate. Shang-Chi is prob" wrappingWidth="294.4700927734375">
+                                 <fill>
+                                    <LinearGradient endX="0.6412699381510416" endY="1.0" startX="0.20634919575282507" startY="0.3492063249860491">
+                                       <stops>
+                                          <Stop color="#1fd1f9" />
+                                          <Stop color="#1fd1f9" offset="0.19412515964240087" />
+                                          <Stop color="#b621fe" offset="0.6958565390844098" />
+                                          <Stop color="#b321fcfa" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                              </Text>
+                           </content>
+                           <padding>
+                              <Insets top="15.0" />
+                           </padding>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="137.0" prefWidth="313.0" GridPane.columnIndex="1">
+                     <children>
+                        <HBox prefHeight="68.0" prefWidth="275.0">
+                           <children>
+                              <Label fx:id="txtPrice" prefHeight="65.0" prefWidth="56.0" style="-fx-text-fill: linear-gradient(to bottom, #fbb034 0%, #ffdd00 50%); -fx-alignment: center; -fx-effect: dropShadow(three-pass-box, gold, 6, 0.1,0,0,0); -fx-font-style: normal;" styleClass="effect_price" stylesheets="@Style.css" text="500" textFill="#f8f8f8">
+                                 <font>
+                                    <Font name="Montserrat Black Italic" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="46.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/icon/coin-flip-27.gif" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets top="8.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="102.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="47.0" prefWidth="308.0">
+                           <children>
+                              <JFXButton id="shiny" onAction="#btnAddToCart" prefHeight="29.0" prefWidth="126.0" text=" ADD" textFill="#f8f8f8">
+                                 <font>
+                                    <Font name="Montserrat Medium" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../img/icon/add-cart.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="text-12" />
+                                    <String fx:value="textShadow" />
+                                 </styleClass>
+                              </JFXButton>
+                              <JFXButton id="shiny" fx:id="buynow" layoutX="10.0" layoutY="10.0" onAction="#btnBuyNow" prefHeight="33.0" prefWidth="123.0" text=" BUY" textFill="#f8f8f8">
+                                 <font>
+                                    <Font name="Montserrat Medium" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../img/icon/purchase.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="text-15" />
+                                    <String fx:value="textShadow" />
+                                 </styleClass>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="161.0" prefWidth="322.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <JFXButton prefHeight="21.0" prefWidth="262.0" text=" Reviews" textFill="GOLD">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" styleClass="textShadow">
+                                 <image>
+                                    <Image url="@../../img/icon/feedback.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <ScrollPane prefHeight="104.0" prefWidth="296.0" styleClass="border_all">
+                           <content>
+                              <HBox prefHeight="165.0" prefWidth="271.0">
+                                 <children>
+                                    <GridPane fx:id="gridFeedback" prefHeight="99.0" prefWidth="35.0">
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </HBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </GridPane>
+            </children>
+        </AnchorPane>
+      <AnchorPane prefHeight="700.0" prefWidth="196.0" styleClass="nav-menu-aside">
+         <children>
+            <ImageView fitHeight="114.0" fitWidth="160.0" layoutX="45.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/icon/Mepo-Water-Logo%20copy.png" />
+               </image>
+            </ImageView>
+            <GridPane layoutX="3.0" layoutY="125.0" prefHeight="521.0" prefWidth="203.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.0" minWidth="10.0" prefWidth="227.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="0.0" prefWidth="0.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton onAction="#btnActiontuCoin" prefHeight="62.0" prefWidth="180.0" styleClass="topUpCoins" text="TOP-UP COINS" textFill="GOLD" GridPane.halignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/icon/coin-flip-27.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton onAction="#btnGame" prefHeight="62.0" prefWidth="176.0" styleClass="text-menu-top" text=" Cinema" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="img_hide">
+                           <image>
+                              <Image url="@../../img/icon/clapboard.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton maxWidth="180.0" onAction="#btnActionMyMovies" prefHeight="52.0" prefWidth="180.0" text="  My Movies" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-menu-size">
+                           <image>
+                              <Image url="@../../img/icon/film-reel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="btn_hide" />
+                        <String fx:value="text-menu-top" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton maxWidth="180.0" onAction="#btnTransactions" prefHeight="62.0" prefWidth="180.0" stylesheets="@Style.css" text=" Transactions" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                     <styleClass>
+                        <String fx:value="btn_hide" />
+                        <String fx:value="text-menu-top" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+                           <image>
+                              <Image url="@../../img/icon/money-transaction.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton maxWidth="180.0" onAction="#miAccountClick" prefHeight="52.0" prefWidth="180.0" text=" My Profile" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-menu-size">
+                           <image>
+                              <Image url="@../../img/icon/user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="btn_hide" />
+                        <String fx:value="text-menu-top" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton maxWidth="200.0" onAction="#btnContact" prefHeight="37.0" prefWidth="234.0" text="  Contact Us" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/icon/contact.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="text-menu-top" />
+                        <String fx:value="btn_hide" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton onAction="#miLogout" prefHeight="62.0" prefWidth="161.0" text="  Log out" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/icon/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="text-menu-top" />
+                        <String fx:value="btn_hide" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+    </children>
+   <styleClass>
+      <String fx:value="dark_background" />
+      <String fx:value="borderStage" />
+   </styleClass>
+</AnchorPane>

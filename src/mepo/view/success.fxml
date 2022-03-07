@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="187.0" prefWidth="249.0" style="-fx-background-color: linear-gradient(to right, #1dbbdd44, #93f9b944);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="127.0" fitWidth="159.0" layoutX="60.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/icon/success.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="txtsuccess" layoutX="33.0" layoutY="14.0" text="Order success" textFill="#77b43f">
+         <font>
+            <Font name="Microsoft PhagsPa" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

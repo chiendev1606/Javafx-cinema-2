@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="1160.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mepo.Controller.Products_editController">
+    <stylesheets>
+        <URL value="@Style.css" />
+    </stylesheets>
+    <children>
+      <Button id="dark" fx:id="btnEdit" layoutX="603.0" layoutY="616.0" mnemonicParsing="false" onAction="#btnEditClick" prefHeight="30.0" prefWidth="120.0" styleClass="button_successfully" text="Submit">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="CHECK" size="14.0" text="" />
+         </graphic>
+         <font>
+            <Font name="Arial Narrow" size="16.0" />
+         </font></Button>
+      <Button id="dark" fx:id="btnReset" layoutX="771.0" layoutY="616.0" mnemonicParsing="false" onAction="#btnResetClick" prefHeight="30.0" prefWidth="120.0" styleClass="button_warning" text="Reset">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="14.0" />
+         </graphic>
+         <font>
+            <Font name="Arial Narrow" size="16.0" />
+         </font>
+      </Button>
+      <Button id="dark" fx:id="btnBack" layoutX="434.0" layoutY="616.0" mnemonicParsing="false" onAction="#btnBackClick" prefHeight="30.0" prefWidth="120.0" styleClass="button_info" text="Back">
+         <graphic>
+            <FontAwesomeIconView fx:id="back" fill="WHITE" glyphName="ARROW_LEFT" size="14.0" text="" />
+         </graphic>
+         <font>
+            <Font name="Arial Narrow" size="16.0" />
+         </font></Button>
+      <Label layoutX="721.0" layoutY="191.0" text="Price">
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="f-monterrat" />
+            <String fx:value="text-15" />
+         </styleClass>
+      </Label>
+      <Label layoutX="362.0" layoutY="534.0" text="Category">
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="f-monterrat" />
+            <String fx:value="text-15" />
+         </styleClass>
+      </Label>
+      <ComboBox id="red" fx:id="btnSelectCategory" layoutX="483.0" layoutY="528.0" prefHeight="31.0" prefWidth="150.0" promptText="Category" />
+      <Label fx:id="description" layoutX="352.0" layoutY="255.0" text="Description">
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="f-monterrat" />
+            <String fx:value="text-15" />
+         </styleClass>
+      </Label>
+      <Label layoutX="365.0" layoutY="471.0" prefHeight="21.0" prefWidth="64.0" text="Images">
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="f-monterrat" />
+            <String fx:value="text-15" />
+         </styleClass>
+      </Label>
+      <Button id="red" fx:id="btnImage" layoutX="483.0" layoutY="466.0" mnemonicParsing="false" onAction="#btnImageClick" prefHeight="31.0" prefWidth="150.0" text="Upload Images">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="IMAGE" />
+         </graphic></Button>
+      <Label fx:id="txtAlertName" layoutX="481.0" layoutY="222.0" prefHeight="19.0" prefWidth="199.0" textFill="#eb0606">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Label fx:id="txtAlertPrice" layoutX="771.0" layoutY="222.0" prefHeight="19.0" prefWidth="150.0" textFill="#ed0505">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+
+      <Text fx:id="txtAlertUrl" fill="#ef0404" layoutX="484.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="238.00000232458115" />
+      <Label fx:id="txtAlertCategory" layoutX="478.0" layoutY="559.0" prefHeight="19.0" prefWidth="224.0" textFill="#eb0606" AnchorPane.topAnchor="559.0">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Label fx:id="txtLB" alignment="CENTER" contentDisplay="CENTER" layoutX="327.0" layoutY="187.0" prefHeight="31.0" prefWidth="140.0" text="Product title">
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="f-monterrat" />
+            <String fx:value="text-15" />
+         </styleClass>
+      </Label>
+      <AnchorPane layoutX="223.0" prefHeight="123.0" prefWidth="936.0" styleClass="menu-admin" AnchorPane.leftAnchor="224.0">
+         <children>
+            <Label layoutX="27.0" layoutY="39.0" prefHeight="41.0" prefWidth="208.0" styleClass="f-monterrat" text="Products" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtUsername" layoutX="712.0" layoutY="58.0" prefHeight="41.0" prefWidth="224.0" textFill="WHITE" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="txtProductname" layoutX="485.0" layoutY="185.0" prefHeight="35.0" prefWidth="191.0" />
+      <JFXTextField fx:id="txtPrice" layoutX="776.0" layoutY="185.0" prefHeight="35.0" prefWidth="140.0" />
+      <ScrollPane layoutX="481.0" layoutY="255.0" prefHeight="70.0" prefWidth="444.0" style="-fx-border-color: black;">
+         <content>
+            <JFXTextArea fx:id="txtDescription" prefHeight="68.0" prefWidth="421.0" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="txtLB1" alignment="CENTER" contentDisplay="CENTER" layoutX="327.0" layoutY="353.0" prefHeight="31.0" prefWidth="140.0" text="Video Trailer">
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font>
+         <styleClass>
+            <String fx:value="f-monterrat" />
+            <String fx:value="text-15" />
+         </styleClass>
+      </Label>
+      <Label fx:id="txtAlertVideo" layoutX="484.0" layoutY="385.0" prefHeight="19.0" prefWidth="444.0" textFill="#e90c0c">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Label fx:id="txtAlertDescription" layoutX="490.0" layoutY="334.0" prefHeight="17.0" prefWidth="385.0" textFill="#e90808" />
+      <ImageView fx:id="imageMovie" fitHeight="110.0" fitWidth="80.0" layoutX="736.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXTextField fx:id="videoTrailer" layoutX="483.0" layoutY="356.0" prefHeight="25.0" prefWidth="444.0" />
+      <Label layoutX="353.0" layoutY="417.0" prefHeight="19.0" prefWidth="88.0" text="Movie URL">
+         <styleClass>
+            <String fx:value="f-monterrat" />
+            <String fx:value="text-15" />
+         </styleClass>
+      </Label>
+      <JFXTextField fx:id="fullMovie" layoutX="487.0" layoutY="414.0" prefHeight="25.0" prefWidth="444.0" />
+      <Label fx:id="textAlertImage" layoutX="491.0" layoutY="497.0" prefHeight="17.0" prefWidth="133.0" textFill="#e83333" translateY="1.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <VBox prefHeight="684.0" prefWidth="224.0" styleClass="menu-admin">
+         <children>
+            <AnchorPane prefHeight="156.0" prefWidth="224.0" styleClass="admin-menu">
+               <children>
+                  <ImageView fitHeight="134.0" fitWidth="187.0" layoutX="19.0" layoutY="12.0" onMouseClicked="#logoClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/Mepo-Water-Logo%20copy.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="btnHome" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnHomeClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnAdmin" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnAdminClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Admin" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnCustomer" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnCustomerClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Customers" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnCategory" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnCategoryClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Categories" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnProduct" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnProductClick" prefHeight="57.0" prefWidth="228.0" styleClass="btnm" text="Products" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton onAction="#btnActionTuCoins" prefHeight="57.0" prefWidth="228.0" styleClass="btn" stylesheets="@Style.css" text="Top-up Coins" textFill="WHITE">
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnOrder" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnOrderClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Orders" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton onAction="#btnActionCard" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Cards" textFill="WHITE">
+               <padding>
+                  <Insets right="73.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnFeedback" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnFeedbackClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Feedback" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnLogout" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnLogoutClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </VBox>
+
+   </children>
+</AnchorPane>

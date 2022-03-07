@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="1160.0" styleClass="background-linear" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mepo.Controller.CustomerController">
+    <stylesheets> 
+        <URL value="@Style.css" />
+    </stylesheets>
+    <children>
+      <AnchorPane layoutX="224.0" prefHeight="157.0" prefWidth="936.0" styleClass="menu-admin">
+         <children>
+            <Label layoutX="33.0" layoutY="32.0" prefHeight="53.0" prefWidth="270.0" styleClass="f-monterrat" text="Customers" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtUser" layoutX="712.0" layoutY="58.0" prefHeight="41.0" prefWidth="224.0" textFill="WHITE" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="91.0" prefHeight="27.0" prefWidth="193.0" styleClass="f-monterrat" text="/Home/Customers" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+          <TableView fx:id="tvAdmin" layoutX="250.0" layoutY="269.0" onMouseClicked="#btnOrder" prefHeight="371.0" prefWidth="497.0">
+              <columns>
+                  <TableColumn fx:id="tcUsername" maxWidth="100.0" minWidth="100.0" prefWidth="137.0" text="Username" />
+                  <TableColumn fx:id="tcFullName" maxWidth="150.0" minWidth="150.0" prefWidth="170.0" text="Full Name" />
+                  <TableColumn fx:id="tcContact" maxWidth="160.0" minWidth="160.0" prefWidth="194.0" text="Email" />
+            <TableColumn fx:id="tcCoins" maxWidth="80.0" minWidth="80.0" prefWidth="75.0" text="Coins" />
+              </columns>
+          </TableView>
+      <JFXTextField fx:id="txtSearch" layoutX="284.0" layoutY="199.0" prefHeight="32.0" prefWidth="469.0" promptText="Search">
+         <font>
+            <Font name="Arial Narrow" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="f-monterrat" />
+            <String fx:value="text-12" />
+         </styleClass></JFXTextField>
+      <VBox prefHeight="684.0" prefWidth="224.0" styleClass="menu-admin">
+         <children>
+            <AnchorPane prefHeight="156.0" prefWidth="224.0" styleClass="admin-menu">
+               <children>
+                  <ImageView fitHeight="134.0" fitWidth="187.0" layoutX="19.0" layoutY="12.0" onMouseClicked="#logoClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/Mepo-Water-Logo%20copy.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="btnHome" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnHomeClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnAdmin" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnAdminClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Admin" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnCustomer" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnCustomerClick" prefHeight="57.0" prefWidth="228.0" styleClass="btnm" text="Customers" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnCategory" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnCategoryClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Categories" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnProduct" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnProductClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Products" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton onAction="#btnActionTuCoins" prefHeight="57.0" prefWidth="228.0" styleClass="btn" stylesheets="@Style.css" text="Top-up Coins" textFill="WHITE">
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnOrder" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnOrderClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Orders" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton onAction="#btnActionCard" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Cards" textFill="WHITE">
+               <padding>
+                  <Insets right="73.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnFeedback" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnFeedbackClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Feedback" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnLogout" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnLogoutClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </VBox>
+      <TableView fx:id="tbGallery" layoutX="782.0" layoutY="269.0" prefHeight="301.0" prefWidth="350.0">
+        <columns>
+          <TableColumn fx:id="tcMovieId" maxWidth="50.0" minWidth="50.0" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="tcMovieName" maxWidth="150.0" minWidth="130.0" prefWidth="150.0" text="Movie" />
+            <TableColumn fx:id="tcDateMovie" maxWidth="100.0" minWidth="80.0" text="Date" />
+            <TableColumn fx:id="tcMovieCoins" maxWidth="80.0" minWidth="80.0" prefWidth="75.0" text="Coins" />
+        </columns>
+      </TableView>
+      <Label fx:id="lbTotalCoins" layoutX="852.0" layoutY="570.0" prefHeight="32.0" prefWidth="260.0" text="Total coins bought : 0 ">
+         <font>
+            <Font name="Montserrat Medium Italic" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

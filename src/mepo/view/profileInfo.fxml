@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="999.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mepo.Controller.ProfileInfoController">
+    <children>
+        <AnchorPane layoutX="224.0" layoutY="10.0" maxHeight="700.0" prefHeight="681.0" prefWidth="723.0" styleClass="dark_background" stylesheets="@Style.css">
+            <children>
+                <Button layoutX="669.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnCart" prefHeight="47.0" prefWidth="58.0" style="-fx-background-color: transparent;">
+               <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../img/icon/carts.png" />
+                            </image>
+                        </ImageView>
+               </graphic></Button>
+                <Label fx:id="txtSll" layoutX="727.0" layoutY="33.0" prefHeight="22.0" prefWidth="34.0" style="-fx-text-fill: linear-gradient(to bottom, #fbb034 0%, #ffdd00 50%);" stylesheets="@Style.css" text="0" textFill="#e0e808">
+                    <font>
+                        <Font name="Montserrat Black" size="17.0" />
+                    </font>
+            </Label>
+                <JFXButton alignment="BASELINE_LEFT" layoutX="37.0" layoutY="8.0" minWidth="164.0" onAction="#btnProfileClick" prefHeight="50.0" prefWidth="164.0" text="My info" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Narrow Bold" size="16.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../img/icon/resume.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="text-menu-top" />
+                        <String fx:value="text-profile" />
+                    </styleClass>
+                </JFXButton>
+                <JFXButton alignment="BASELINE_LEFT" layoutX="231.0" layoutY="8.0" maxWidth="199.0" onAction="#btnChangePassword" prefHeight="50.0" prefWidth="199.0" text="Password" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Narrow Bold" size="16.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../img/icon/padlock.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <styleClass>
+                        <String fx:value="text-menu-top" />
+                        <String fx:value="text-profile" />
+                  <String fx:value="btn_hide" />
+                    </styleClass>
+                </JFXButton>
+                <VBox layoutX="311.0" layoutY="114.0" />
+                <Label fx:id="txtMMM" layoutX="236.0" layoutY="205.0" prefHeight="23.0" prefWidth="272.0" style="-fx-alignment: center;" text="Phuong" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Narrow Bold" size="18.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="text-subtitle" />
+                        <String fx:value="text-18" />
+                    </styleClass>
+                </Label>
+                <HBox layoutX="197.0" layoutY="578.0" prefHeight="31.0" prefWidth="357.0">
+                    <children>
+                        <JFXButton id="dark" fx:id="btnSubmit" onAction="#btnSubmitclick" prefHeight="35.0" prefWidth="120.0" stylesheets="@Style.css" text="Submit" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="16.0" />
+                            </font>
+                            <styleClass>
+                                <String fx:value="button_profile" />
+                                <String fx:value="text-body" />
+                            </styleClass>
+                            <HBox.margin>
+                                <Insets left="40.0" />
+                            </HBox.margin>
+                        </JFXButton>
+                        <JFXButton id="dark" fx:id="btnReset" onAction="#btnResetclick" prefHeight="23.0" prefWidth="118.0" stylesheets="@Style.css" text="Reset" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Narrow Bold" size="16.0" />
+                            </font>
+                            <styleClass>
+                                <String fx:value="button_profile" />
+                                <String fx:value="text-body" />
+                            </styleClass>
+                            <HBox.margin>
+                                <Insets left="50.0" />
+                            </HBox.margin>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <ImageView fitHeight="81.0" fitWidth="84.0" layoutX="336.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../img/icon/user.png" />
+                    </image>
+                </ImageView>
+            <JFXTextField fx:id="txtUserName" layoutX="213.0" layoutY="273.0" prefHeight="25.0" prefWidth="318.0" promptText="User name">
+               <styleClass>
+                  <String fx:value="f-monterrat" />
+                  <String fx:value="text_fff" />
+               </styleClass>
+            </JFXTextField>
+            <JFXTextField fx:id="txtFullName" layoutX="213.0" layoutY="350.0" prefHeight="25.0" prefWidth="318.0" promptText="Full name">
+               <styleClass>
+                  <String fx:value="f-monterrat" />
+                  <String fx:value="text_fff" />
+               </styleClass>
+            </JFXTextField>
+            <JFXTextField fx:id="txtContact" layoutX="213.0" layoutY="430.0" prefHeight="25.0" prefWidth="318.0" promptText="Email">
+               <styleClass>
+                  <String fx:value="f-monterrat" />
+                  <String fx:value="text_fff" />
+               </styleClass>
+            </JFXTextField>
+            <Label fx:id="txtAlertFullName" layoutX="213.0" layoutY="375.0" prefHeight="17.0" prefWidth="272.0" textFill="#f62d2d">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Montserrat Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtAlertContact" layoutX="213.0" layoutY="455.0" prefHeight="17.0" prefWidth="293.0" textFill="#ef0b0b">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <HBox layoutX="508.0" layoutY="8.0" prefHeight="47.0" prefWidth="146.0">
+               <children>
+                  <JFXButton fx:id="textCoin" onAction="#btnActionCoin" prefHeight="50.0" prefWidth="98.0" style="-fx-text-fill: linear-gradient(to bottom, #fbb034 0%, #ffdd00 50%);" text="100">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" translateX="-18.0">
+                     <image>
+                        <Image url="@../../img/icon/coin-flip-27.gif" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            </children>
+        </AnchorPane>
+      <AnchorPane prefHeight="700.0" prefWidth="233.0">
+         <children>
+            <ImageView fitHeight="114.0" fitWidth="160.0" layoutX="45.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/icon/Mepo-Water-Logo%20copy.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="36.0" layoutY="339.0" maxWidth="180.0" onAction="#btnTransactions" prefHeight="62.0" prefWidth="180.0" stylesheets="@Style.css" text=" Transactions" textAlignment="CENTER" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="360.0">
+               <styleClass>
+                  <String fx:value="btn_hide" />
+                  <String fx:value="text-menu-top" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+                     <image>
+                        <Image url="@../../img/icon/money-transaction.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="35.0" layoutY="202.0" onAction="#btnGame" prefHeight="62.0" prefWidth="176.0" text=" Cinema" textAlignment="CENTER" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="220.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="img_hide">
+                     <image>
+                        <Image url="@../../img/icon/clapboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="text-menu-top" />
+                  <String fx:value="btn_hide" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="39.0" layoutY="481.0" maxWidth="200.0" onAction="#btnContact" prefHeight="37.0" prefWidth="234.0" text="  Contact Us" textAlignment="CENTER" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="500.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/contact.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="text-menu-top" />
+                  <String fx:value="btn_hide" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="38.0" layoutY="410.0" maxWidth="180.0" onAction="#miAccountClick" prefHeight="52.0" prefWidth="180.0" styleClass="text-menu-top" text=" My Profile" textAlignment="CENTER" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="430.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-menu-size">
+                     <image>
+                        <Image url="@../../img/icon/user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="40.0" layoutY="553.0" onAction="#miLogout" prefHeight="62.0" prefWidth="161.0" text="  Log out" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="570.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="text-menu-top" />
+                  <String fx:value="btn_hide" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="35.0" layoutY="118.0" onAction="#btnActiontuCoin" prefHeight="62.0" prefWidth="180.0" styleClass="topUpCoins" text="TOP-UP COINS" textFill="GOLD" AnchorPane.topAnchor="140.0">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/coin-flip-27.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Montserrat ExtraBold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="36.0" layoutY="267.0" maxWidth="180.0" onAction="#btnActionMyMovies" prefHeight="52.0" prefWidth="180.0" text="  My Movies" textAlignment="CENTER" AnchorPane.topAnchor="290.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-menu-size">
+                     <image>
+                        <Image url="@../../img/icon/film-reel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="btn_hide" />
+                  <String fx:value="text-menu-top" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+    </children>
+   <styleClass>
+      <String fx:value="borderStage" />
+      <String fx:value="dark_background" />
+   </styleClass>
+</AnchorPane>

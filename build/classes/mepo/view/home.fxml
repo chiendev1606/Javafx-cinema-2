@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="999.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mepo.Controller.HomeController">
+   <children>
+      <AnchorPane layoutX="222.0" layoutY="18.0" maxHeight="700.0" prefHeight="662.0" prefWidth="763.0" styleClass="dark_background" stylesheets="@Style.css">
+         <children>
+            <JFXComboBox fx:id="txtCategory" focusColor="TRANSPARENT" layoutX="14.0" layoutY="6.0" maxWidth="1.7976931348623157E308" onAction="#cbCategory" prefHeight="39.0" prefWidth="104.0" promptText="All" styleClass="text_category" unFocusColor="TRANSPARENT" AnchorPane.leftAnchor="14.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXComboBox>
+            <JFXTextField fx:id="txtSearch" focusColor="#00edce00" layoutX="133.0" layoutY="6.0" prefHeight="39.0" prefWidth="204.0" promptText="Search...." styleClass="text_search" unFocusColor="TRANSPARENT" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="6.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="146.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="14.0">
+               <image>
+                  <Image url="@../../img/icon/search.png" />
+               </image>
+            </ImageView>
+            <ScrollPane layoutX="11.0" layoutY="71.0" prefHeight="594.0" prefWidth="738.0" styleClass="dark_background">
+               <content>
+                  <GridPane fx:id="mainGrid" prefHeight="28.0" prefWidth="20.0" styleClass="dark_background" stylesheets="@Style.css" translateX="10.0">
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+            <Button layoutX="691.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnCart" prefHeight="47.0" prefWidth="58.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/carts.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="txtSll" layoutX="735.0" layoutY="28.0" prefHeight="22.0" prefWidth="34.0" style="-fx-text-fill: linear-gradient(to bottom, #fbb034 0%, #ffdd00 50%);" text="0" textFill="#e7eb09">
+               <font>
+                  <Font name="Montserrat Black" size="17.0" />
+               </font>
+            </Label>
+            <HBox layoutX="569.0" layoutY="2.0" prefHeight="50.0" prefWidth="123.0" AnchorPane.rightAnchor="74.0">
+               <children>
+                  <JFXButton fx:id="textCoin" prefHeight="50.0" prefWidth="90.0" style="-fx-text-fill: linear-gradient(to bottom, #fbb034 0%, #ffdd00 50%);" text="100">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" translateX="-18.0">
+                     <image>
+                        <Image url="@../../img/icon/coin-flip-27.gif" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <JFXSlider fx:id="sliderPrice" blockIncrement="0.0" layoutX="362.0" layoutY="29.0" prefHeight="14.0" prefWidth="190.0" styleClass="filterPrice" />
+            <Label fx:id="sliderLabel" layoutX="417.0" layoutY="6.0" prefHeight="17.0" prefWidth="80.0" textFill="GOLD">
+               <font>
+                  <Font name="Montserrat Regular" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="472.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/icon/coin-flip-27.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="700.0" prefWidth="233.0" styleClass="nav-menu-aside">
+         <children>
+            <ImageView fitHeight="114.0" fitWidth="160.0" layoutX="45.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/icon/Mepo-Water-Logo%20copy.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="36.0" layoutY="339.0" maxWidth="180.0" onAction="#btnTransactions" prefHeight="62.0" prefWidth="180.0" stylesheets="@Style.css" text=" Transactions" textAlignment="CENTER" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="360.0">
+               <styleClass>
+                  <String fx:value="btn_hide" />
+                  <String fx:value="text-menu-top" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+                     <image>
+                        <Image url="@../../img/icon/money-transaction.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="35.0" layoutY="202.0" onAction="#btnGame" prefHeight="62.0" prefWidth="176.0" styleClass="text-menu-top" text=" Cinema" textAlignment="CENTER" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="220.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="img_hide">
+                     <image>
+                        <Image url="@../../img/icon/clapboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="39.0" layoutY="481.0" maxWidth="200.0" onAction="#btnContact" prefHeight="37.0" prefWidth="234.0" text="  Contact Us" textAlignment="CENTER" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="500.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/contact.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="text-menu-top" />
+                  <String fx:value="btn_hide" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="38.0" layoutY="410.0" maxWidth="180.0" onAction="#miAccountClick" prefHeight="52.0" prefWidth="180.0" text=" My Profile" textAlignment="CENTER" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="430.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-menu-size">
+                     <image>
+                        <Image url="@../../img/icon/user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="btn_hide" />
+                  <String fx:value="text-menu-top" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="40.0" layoutY="553.0" onAction="#miLogout" prefHeight="62.0" prefWidth="161.0" text="  Log out" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="570.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="text-menu-top" />
+                  <String fx:value="btn_hide" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="35.0" layoutY="118.0" onAction="#btnActiontuCoin" prefHeight="62.0" prefWidth="180.0" styleClass="topUpCoins" text="TOP-UP COINS" textFill="GOLD" AnchorPane.topAnchor="140.0">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/coin-flip-27.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Montserrat ExtraBold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="36.0" layoutY="267.0" maxWidth="180.0" onAction="#btnActionMyMovies" prefHeight="52.0" prefWidth="180.0" text="  My Movies" textAlignment="CENTER" AnchorPane.topAnchor="290.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-menu-size">
+                     <image>
+                        <Image url="@../../img/icon/film-reel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="btn_hide" />
+                  <String fx:value="text-menu-top" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+   <styleClass>
+      <String fx:value="dark_background" />
+      <String fx:value="borderStage" />
+   </styleClass>
+</AnchorPane>

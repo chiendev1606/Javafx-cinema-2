@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="844.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mepo.Controller.RegistrationController">
+   <children>
+      <ImageView fitHeight="511.0" fitWidth="866.0" layoutX="-15.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/icon/login.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="472.0" layoutY="-1.0" prefHeight="475.0" prefWidth="340.0" style="-fx-background-color: rgba(0,0,0,0.4);">
+         <children>
+            <JFXTextField fx:id="txtusername" focusColor="#0fa437" layoutX="37.0" layoutY="59.0" prefHeight="38.0" prefWidth="270.0" promptText="User name" style="-fx-prompt-text-fill: #f8f8f8; -fx-text-inner-color: #f8f8f8;" unFocusColor="#b9b0b0">
+               <font>
+                  <Font name="Montserrat Regular" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtpassword" focusColor="#0fa437" layoutX="35.0" layoutY="124.0" prefHeight="38.0" prefWidth="270.0" promptText="Password" style="-fx-prompt-text-fill: #f8f8f8; -fx-text-inner-color: #f8f8f8;" unFocusColor="#b9b0b0">
+               <font>
+                  <Font name="Montserrat Regular" size="13.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton id="dark" fx:id="btnregister" layoutX="109.0" layoutY="390.0" onAction="#btnregisterclick" prefHeight="3.0" prefWidth="140.0" stylesheets="@Style.css" text="Sign Up" textFill="#f8f8f8">
+               <font>
+                  <Font name="Arial Narrow Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="127.0" layoutY="14.0" text="Register" textFill="#f8f8f8">
+               <font>
+                  <Font name="Montserrat SemiBold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <JFXPasswordField fx:id="txtconfirmpassword" focusColor="#0fa437" layoutX="37.0" layoutY="185.0" prefHeight="38.0" prefWidth="270.0" promptText="Confirm Password" style="-fx-prompt-text-fill: #f8f8f8; -fx-text-inner-color: #f8f8f8;" unFocusColor="#b9b0b0">
+               <font>
+                  <Font name="Montserrat Regular" size="13.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="txtfullname" focusColor="#0fa437" layoutX="37.0" layoutY="250.0" prefHeight="38.0" prefWidth="270.0" promptText="Full Name" style="-fx-prompt-text-fill: #f8f8f8; -fx-text-inner-color: #f8f8f8;" unFocusColor="#b9b0b0">
+               <font>
+                  <Font name="Montserrat Regular" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtcontact" focusColor="#0fa437" layoutX="35.0" layoutY="313.0" prefHeight="38.0" prefWidth="270.0" promptText="Email" style="-fx-prompt-text-fill: #f8f8f8; -fx-text-inner-color: #f8f8f8;" unFocusColor="#b9b0b0">
+               <font>
+                  <Font name="Montserrat Regular" size="13.0" />
+               </font>
+            </JFXTextField>
+            <Label fx:id="txt_alert_username" layoutX="37.0" layoutY="97.0" prefHeight="17.0" prefWidth="270.0" textFill="#f86363" AnchorPane.topAnchor="83.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="txt_alert_password" layoutX="35.0" layoutY="162.0" prefHeight="17.0" prefWidth="270.0" textFill="#f86363" AnchorPane.topAnchor="149.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="txt_alert_confirm_password" layoutX="37.0" layoutY="223.0" prefHeight="17.0" prefWidth="270.0" textFill="#f86363" AnchorPane.topAnchor="209.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="txt_alert_fullname" layoutX="37.0" layoutY="288.0" prefHeight="17.0" prefWidth="270.0" textFill="#f86363" AnchorPane.topAnchor="275.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="txt_alert_contact" layoutX="35.0" layoutY="351.0" prefHeight="17.0" prefWidth="270.0" textFill="#f86363" AnchorPane.topAnchor="338.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </AnchorPane>
+      <Label layoutX="18.0" layoutY="157.0" prefHeight="50.0" prefWidth="347.0" text="WELCOME TO MEPO " textFill="#f8f8f8">
+         <font>
+            <Font name="Montserrat Black Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="108.0" />
+      <Text fill="#f8f8f8" layoutX="26.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bring the whole cinema your bed" textAlignment="CENTER" wrappingWidth="322.80340576171875">
+         <font>
+            <Font name="Montserrat SemiBold Italic" size="14.0" />
+         </font>
+      </Text>
+      <JFXButton id="dark" fx:id="btnlogin" layoutX="115.0" layoutY="246.0" onAction="#btnloginclick" prefHeight="38.0" prefWidth="119.0" stylesheets="@Style.css" text="Log In" textFill="#f8f8f8">
+         <font>
+            <Font name="Arial Narrow Bold" size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

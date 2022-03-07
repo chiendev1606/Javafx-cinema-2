@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1017.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mepo.Controller.ContactController">
+    <children>
+        <AnchorPane layoutX="239.0" layoutY="7.0" maxHeight="700.0" prefHeight="687.0" prefWidth="767.0" styleClass="dark_background" stylesheets="@Style.css">
+            <children>
+                <Button layoutX="649.0" layoutY="9.0" mnemonicParsing="false" onAction="#btnCart" prefHeight="47.0" prefWidth="58.0" style="-fx-background-color: transparent;" />
+                <Label fx:id="txtSll" layoutX="715.0" layoutY="33.0" prefHeight="26.0" prefWidth="38.0" style="-fx-text-fill: linear-gradient(to bottom, #fbb034 0%, #ffdd00 50%);" text="0" textFill="#f2de0b">
+               <font>
+                  <Font name="Montserrat Black" size="17.0" />
+               </font></Label>
+            <Label layoutX="284.0" layoutY="58.0" styleClass="text-title" stylesheets="@stylesheet.css" text="Contact Us">
+               <font>
+                  <Font name="Arial Narrow Bold" size="25.0" />
+               </font>
+               <textFill>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.5238095238095237" endY="0.014285714285714235" startX="0.5190476190476191" startY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#00aee8" offset="0.007662835249042145" />
+                        <Stop color="#00acea" offset="0.007662835249042145" />
+                        <Stop color="#00efd1" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="352.0" fitWidth="635.0" layoutX="115.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Capture.PNG" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" layoutX="145.0" layoutY="503.0" prefHeight="148.0" prefWidth="453.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="21.0" prefWidth="245.0" styleClass="text-subtitle" stylesheets="@stylesheet.css" text="Hotline: 036 943 3127 " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Arial Narrow" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="37.0" prefWidth="289.0" styleClass="text-subtitle" stylesheets="@stylesheet.css" text="Email: mepocinemavietnam@gmail.com" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Arial Narrow" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="39.0" prefWidth="307.0" styleClass="text-subtitle" stylesheets="@Style.css" text="No 9B, Chùa Xa La, Phúc La, Hà Đông" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Arial Narrow" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox layoutX="506.0" layoutY="6.0" prefHeight="47.0" prefWidth="146.0" AnchorPane.rightAnchor="95.0">
+               <children>
+                  <JFXButton fx:id="textCoin" onAction="#btnActionCoin" prefHeight="50.0" prefWidth="98.0" style="-fx-text-fill: linear-gradient(to bottom, #fbb034 0%, #ffdd00 50%);" text="100">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" translateX="-18.0">
+                     <image>
+                        <Image url="@../../img/icon/coin-flip-27.gif" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="8.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+                  <ImageView fitHeight="36.0" fitWidth="34.0" layoutX="678.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                          <Image url="@../../img/icon/carts.png" />
+                      </image>
+                  </ImageView>
+            </children>
+        </AnchorPane>
+      <AnchorPane prefHeight="700.0" prefWidth="233.0">
+         <children>
+            <ImageView fitHeight="114.0" fitWidth="160.0" layoutX="45.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/icon/Mepo-Water-Logo%20copy.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="36.0" layoutY="339.0" maxWidth="180.0" onAction="#btnTransactions" prefHeight="62.0" prefWidth="180.0" stylesheets="@Style.css" text=" Transactions" textAlignment="CENTER" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="360.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+                     <image>
+                        <Image url="@../../img/icon/money-transaction.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="text-menu-top" />
+                  <String fx:value="btn_hide" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="35.0" layoutY="202.0" onAction="#btnGame" prefHeight="62.0" prefWidth="176.0" text=" Cinema" textAlignment="CENTER" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="220.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="img_hide">
+                     <image>
+                        <Image url="@../../img/icon/clapboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="text-menu-top" />
+                  <String fx:value="btn_hide" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="39.0" layoutY="481.0" maxWidth="200.0" onAction="#btnContact" prefHeight="37.0" prefWidth="234.0" styleClass="text-menu-top" text="  Contact Us" textAlignment="CENTER" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="500.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/contact.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="38.0" layoutY="410.0" maxWidth="180.0" onAction="#miAccountClick" prefHeight="52.0" prefWidth="180.0" text=" My Profile" textAlignment="CENTER" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="430.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-menu-size">
+                     <image>
+                        <Image url="@../../img/icon/user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="btn_hide" />
+                  <String fx:value="text-menu-top" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="40.0" layoutY="553.0" onAction="#miLogout" prefHeight="62.0" prefWidth="161.0" text="  Log out" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="570.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="text-menu-top" />
+                  <String fx:value="btn_hide" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="35.0" layoutY="118.0" onAction="#btnActiontuCoin" prefHeight="62.0" prefWidth="180.0" styleClass="topUpCoins" text="TOP-UP COINS" textFill="GOLD" AnchorPane.topAnchor="140.0">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/coin-flip-27.gif" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Montserrat ExtraBold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="36.0" layoutY="267.0" maxWidth="180.0" onAction="#btnActionMyMovies" prefHeight="52.0" prefWidth="180.0" text="  My Movies" textAlignment="CENTER" AnchorPane.topAnchor="290.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-menu-size">
+                     <image>
+                        <Image url="@../../img/icon/film-reel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="btn_hide" />
+                  <String fx:value="text-menu-top" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+    </children>
+   <styleClass>
+      <String fx:value="borderStage" />
+      <String fx:value="dark_background" />
+   </styleClass>
+</AnchorPane>

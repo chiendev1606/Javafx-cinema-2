@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="999.0" style="-fx-border-color: linear-gradient(to bottom, #fbb034 0%, #ffdd00 50%);" styleClass="dark_background" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mepo.Controller.NewsController">
+    <children>
+        <AnchorPane layoutX="239.0" maxHeight="700.0" prefHeight="700.0" prefWidth="775.0" style="-fx-border-width: 1px; -fx-border-color: linear-gradient(to bottom, #fbb034 0%, #ffdd00 50%);" styleClass="dark_background" stylesheets="@Style.css">
+            <children>
+                <Button layoutX="649.0" layoutY="9.0" mnemonicParsing="false" onAction="#btnCart" prefHeight="47.0" prefWidth="58.0" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../img/icon/carts.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Label fx:id="txtSll" layoutX="698.0" layoutY="33.0" prefHeight="21.0" prefWidth="18.0" stylesheets="@Style.css" text="0" textFill="#e0e808">
+               <font>
+                  <Font name="Montserrat Black" size="20.0" />
+               </font></Label>
+            <Label layoutX="276.0" layoutY="79.0" prefHeight="37.0" prefWidth="246.0" styleClass="text-title" text="COMING SOON" textAlignment="CENTER" textFill="#00efd1">
+               <font>
+                  <Font name="Montserrat Black Italic" size="25.0" />
+               </font>
+            </Label>
+            <VBox layoutX="2.0" layoutY="154.0" prefHeight="261.0" prefWidth="767.0" stylesheets="@Style.css">
+               <children>
+                  <HBox prefHeight="231.0" prefWidth="729.0" styleClass="dark_background" stylesheets="@Style.css">
+                     <children>
+                        <VBox prefHeight="203.0" prefWidth="642.0" stylesheets="@Style.css">
+                           <children>
+                              <Label prefHeight="48.0" prefWidth="592.0" text="'Eternals': Marvel's highly anticipated superhero blockbuster" textFill="WHITE">
+                                 <font>
+                                    <Font name="Montserrat Medium Italic" size="18.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="text-subtitle" />
+                                    <String fx:value="text-18" />
+                                 </styleClass>
+                              </Label>
+                              <Label prefHeight="21.0" prefWidth="285.0" styleClass="text-subtitle" text="Friday, October 29 @ 2:00 PM" textFill="#2cbfff">
+                                 <font>
+                                    <Font name="Montserrat Regular" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="158.0" prefWidth="385.0" styleClass="text-body" text="Blockbuster Eternals has a multi-ethnic star cast such as Gemma Chan (super hero Sersi), Kumail Nanjiani (Kingo), Brian Tyree Henry (Phastos), Barry Keoghan (Druig), Ma Dong Seok (Gilgamesh), Kit Harington ( Dane Whitman), Salma Hayek (Ajak), Angelina Jolie (Thena), Richard Madden (Ikaris)... Chinese female director Zhao Ting, who won the Best Director Oscar for her recent film Nomadland, is at the helm. product this time, so that the world she created &quot;fits in&quot; with developments in the &quot;Marvel cinematic universe&quot; post-Avengers: Endgame." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Montserrat Regular" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <ImageView fitHeight="178.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/news/eternals-chung-toc-bat-tu-dan-dat-mcu-sau-avengers-1634281740500696253068.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="30.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox layoutX="15.0" layoutY="402.0" prefHeight="261.0" prefWidth="750.0" styleClass="dark_background" stylesheets="@Style.css">
+               <children>
+                  <ImageView fitHeight="201.0" fitWidth="395.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/news/venom-2-tom-hardy_EUQN.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="203.0" prefWidth="642.0" stylesheets="@Style.css">
+                     <children>
+                        <Label prefHeight="53.0" prefWidth="592.0" text="'Blockbuster' Venom: Let There Be Carnage received mixed praise" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Medium Italic" size="17.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="text-18" />
+                              <String fx:value="text-title" />
+                           </styleClass>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="327.0" styleClass="text-subtitle" text="Friday, October 1 @ 7:00 PM" textFill="#2cbfff">
+                           <font>
+                              <Font name="Montserrat Regular" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="text-body" text="The New York Times film critic Amy Nicholson said, &quot;A lot of the fighting sequences aren't as exciting. The producer should have abandoned the symbiote plot to save the world for a later sequel because, as Venom said, 'The only responsibility is to take responsibility'. for the common people'&quot;. Leah Greenblatt from Entertainment Weekly thinks that Venom: Let There Be Carnage is very liberal and even redefines the YOLO (You only live once) message." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Montserrat Regular" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            </children>
+        </AnchorPane>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" />
+      <AnchorPane prefHeight="700.0" prefWidth="233.0" styleClass="nav-menu-aside">
+         <children>
+            <ImageView fitHeight="133.0" fitWidth="203.0" layoutX="26.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/icon/Mepo-Water-Logo%20copy.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="32.0" layoutY="263.0" maxWidth="180.0" onAction="#btnFeedBack" prefHeight="62.0" prefWidth="180.0" styleClass="text-menu-top" stylesheets="@Style.css" text="  News" textAlignment="CENTER" AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="262.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+                     <image>
+                        <Image url="@../../img/icon/news.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="33.0" layoutY="185.0" onAction="#btnGame" prefHeight="62.0" prefWidth="176.0" text=" Cinema" textAlignment="CENTER" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="180.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="img_hide">
+                     <image>
+                        <Image url="@../../img/icon/clapboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="text-menu-top" />
+                  <String fx:value="btn_hide" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="-2.0" layoutY="342.0" maxWidth="200.0" onAction="#btnContact" prefHeight="37.0" prefWidth="234.0" text="  Contact Us" textAlignment="CENTER" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="342.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/contact.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="text-menu-top" />
+                  <String fx:value="btn_hide" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="33.0" layoutY="422.0" maxWidth="180.0" onAction="#miAccountClick" prefHeight="52.0" prefWidth="180.0" text="  Profile" textAlignment="CENTER" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="421.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-menu-size">
+                     <image>
+                        <Image url="@../../img/icon/user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="btn_hide" />
+                  <String fx:value="text-menu-top" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton layoutX="40.0" layoutY="504.0" onAction="#miLogout" prefHeight="62.0" prefWidth="161.0" text="  Log out" AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="503.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="text-menu-top" />
+                  <String fx:value="btn_hide" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

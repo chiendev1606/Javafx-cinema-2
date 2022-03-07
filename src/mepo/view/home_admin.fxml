@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="684.0" maxWidth="1160.0" minHeight="684.0" minWidth="1160.0" prefHeight="684.0" prefWidth="1160.0" styleClass="background-linear" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mepo.Controller.HomeAdminController">
+    <stylesheets> 
+        <URL value="@Style.css" />
+    </stylesheets>
+    <children>
+      <AnchorPane layoutX="225.0" layoutY="138.0" prefHeight="539.0" prefWidth="900.0">
+         <children>
+            <HBox layoutX="39.0" layoutY="77.0" prefHeight="27.0" prefWidth="580.0" spacing="20.0">
+               <children>
+                  <DatePicker fx:id="dateFrom" prefHeight="27.0" prefWidth="180.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To" wrappingWidth="15.5380859375">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <DatePicker fx:id="dateTo" prefHeight="13.0" prefWidth="173.0" />
+                  <JFXButton id="line" fx:id="btnWatch" onAction="#btnActionWatch" prefHeight="27.0" prefWidth="105.0" text="watch">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></JFXButton>
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+            <ScrollPane layoutX="14.0" layoutY="117.0" prefHeight="414.0" prefWidth="595.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="564.0">
+                     <children>
+                        <BarChart fx:id="barChartCinema" layoutX="-62.0" layoutY="-11.0" prefHeight="414.0" prefWidth="595.0">
+                          <xAxis>
+                             <NumberAxis label="Total Income ( $ )" prefHeight="44.0" prefWidth="344.0" side="BOTTOM">
+                                <tickLabelFont>
+                                   <Font name="Montserrat Regular" size="10.0" />
+                                </tickLabelFont>
+                             </NumberAxis>
+                          </xAxis>
+                          <yAxis>
+
+
+                             <CategoryAxis animated="false" prefHeight="340.0" prefWidth="243.0" side="LEFT">
+                                <tickLabelFont>
+                                   <Font name="Montserrat Regular" size="10.0" />
+                                </tickLabelFont>
+                             </CategoryAxis>
+
+                          </yAxis>
+                        </BarChart>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <AnchorPane layoutX="538.0" layoutY="141.0" prefHeight="344.0" prefWidth="354.0">
+               <children>
+                  <PieChart fx:id="pieChartCinema" layoutX="21.0" layoutY="-8.0" prefHeight="338.0" prefWidth="388.0" />
+                  <Label fx:id="percentageLb" layoutX="111.0" layoutY="29.0" prefHeight="27.0" prefWidth="187.0" textFill="#ee4747" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="incomePerMovie" layoutX="39.0" layoutY="14.0" prefHeight="54.0" prefWidth="472.0" textFill="#e41b1b">
+               <font>
+                  <Font name="Monospaced Regular" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <VBox prefHeight="684.0" prefWidth="224.0" styleClass="menu-admin">
+         <children>
+            <AnchorPane prefHeight="125.0" prefWidth="224.0" styleClass="admin-menu">
+               <children>
+                  <ImageView fitHeight="134.0" fitWidth="187.0" layoutX="19.0" layoutY="12.0" onMouseClicked="#logoClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/Mepo-Water-Logo%20copy.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="btnHome" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnHomeClick" prefHeight="57.0" prefWidth="228.0" styleClass="btnm" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnAdmin" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnAdminClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Admin" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnCustomer" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnCustomerClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Customers" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnCategory" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnCategoryClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Categories" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnProduct" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnProductClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Products" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton onAction="#btnActionTuCoins" prefHeight="57.0" prefWidth="228.0" styleClass="btn" stylesheets="@Style.css" text="Top-up Coins" textFill="WHITE">
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnOrder" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnOrderClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Orders" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton onAction="#btnActionCard" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Cards" textFill="WHITE">
+               <padding>
+                  <Insets right="73.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnFeedback" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnFeedbackClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Feedback" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="btnLogout" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#btnLogoutClick" prefHeight="57.0" prefWidth="228.0" styleClass="btn" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </VBox>
+      <HBox layoutX="792.0" layoutY="90.0" prefHeight="122.0" prefWidth="338.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER" maxHeight="120.0" maxWidth="200.0" minHeight="88.0" minWidth="98.0" prefHeight="120.0" prefWidth="98.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/team.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="txtCountUser" alignment="CENTER" prefHeight="14.0" prefWidth="85.0" text="50 users">
+                     <font>
+                        <Font name="Arial Narrow" size="15.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="f-monterrat" />
+                        <String fx:value="text-12" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" text="Customers">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="20.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="text-12" />
+                        <String fx:value="f-monterrat" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" maxHeight="120.0" maxWidth="200.0" minHeight="120.0" minWidth="105.0" prefHeight="120.0" prefWidth="105.0">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/film-reel.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="txtCountGameOrder" alignment="CENTER" prefHeight="19.0" prefWidth="96.0" text="150 cinemas">
+                     <font>
+                        <Font name="Arial Narrow" size="15.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="f-monterrat" />
+                        <String fx:value="text-12" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Orders">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="20.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="text-12" />
+                        <String fx:value="f-monterrat" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" maxHeight="120.0" maxWidth="200.0" minHeight="120.0" minWidth="113.0" prefHeight="120.0" prefWidth="113.0">
+               <children>
+                  <ImageView fitHeight="34.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/package.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="txtCountFeedback" alignment="CENTER" prefHeight="19.0" prefWidth="101.0" text="150 feedback">
+                     <font>
+                        <Font name="Arial Narrow" size="15.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="f-monterrat" />
+                        <String fx:value="text-12" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" text="Rating">
+                     <font>
+                        <Font name="Arial Narrow Bold" size="20.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="text-12" />
+                        <String fx:value="f-monterrat" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="222.0" layoutY="-2.0" prefHeight="86.0" prefWidth="938.0" styleClass="menu-admin" stylesheets="@Style.css">
+         <children>
+            <Text fill="WHITE" layoutX="42.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DASH BOARD" wrappingWidth="281.0840072631836">
+               <font>
+                  <Font name="Montserrat Bold" size="34.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <Label fx:id="lBtotalSold" layoutX="268.0" layoutY="111.0" prefHeight="40.0" prefWidth="496.0" textFill="#ee4747">
+         <font>
+            <Font name="Monospaced Regular" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

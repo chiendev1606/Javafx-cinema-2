@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="106.0" maxWidth="343.0" minHeight="106.0" minWidth="343.0" prefHeight="106.0" prefWidth="343.0" style="-fx-background-color: linear-gradient(to right, #1dbbdd44, #93f9b944);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mepo.Controller.OrderItemAdminController">
+   <children>
+      <ImageView fx:id="img" fitHeight="96.0" fitWidth="70.0" layoutX="16.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/1BIoJGKbXjdFDAqUEiA2VHqkK1Z.jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="name" layoutX="96.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="f-monterrat" text="Shang-Chi and the Legend of the Ten Rings (2021)" wrappingWidth="116.33331570029259">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="bDelete" layoutX="304.0" layoutY="-3.0" prefHeight="25.0" prefWidth="12.0" stylesheets="@Style.css" text=" ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="txtPrice" layoutX="241.0" layoutY="43.0" prefHeight="19.0" prefWidth="36.0" text="0">
+         <font>
+            <Font name="Montserrat Regular" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="277.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/icon/coin-flip-27.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

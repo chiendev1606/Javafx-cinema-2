@@ -1,0 +1,1147 @@
+/**{*/
+/*    -fx-font-family: Montserrat ;*/
+/*}*/
+/*----------------------------------------------------------------------------*/
+#windows7 {
+    -fx-background-color:
+            #707070,
+            linear-gradient(#fcfcfc, #f3f3f3),
+            linear-gradient(#f2f2f2 0%, #ebebeb 49%, #dddddd 50%, #cfcfcf 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: linear-gradient(#f0ff35,#a9ff00);
+    -fx-font-size: 15px;
+}
+
+#windows7:hover {
+    -fx-background-color:
+            #3c7fb1,
+            linear-gradient(#fafdfe, #e8f5fc),
+            linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+/*---------------------------------------------------------------------------*/
+
+#green
+{
+    -fx-background-color:
+            linear-gradient(#f0ff35,#a9ff00),
+            radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6,5;
+    -fx-background-insets: 0,1;
+
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+    -fx-text-fill: #395306;
+}
+
+#green:hover
+{
+    -fx-background-color:
+            linear-gradient(#a9ff00,#f0ff35),
+            radial-gradient(center 50% -40%, radius 200%, #80c800 45%, #b8ee36 50%);
+    -fx-background-radius: 6,5;
+    -fx-background-insets: 0,1;
+
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0.0, 0, 1);
+    -fx-text-fill: #395306;
+
+}
+
+/*------------------------------------------------------------------------------------*/
+
+#sale
+{
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0,0 0 6 0,0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%,#a34313 0%,#903b12 100%),
+            #9d4024,
+            #d86e3a,
+            radial-gradient(center 50% 50%, radius 100%,#d96e3a,#c54e2c);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75),4,0,0,1);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-text-fill: white;
+}
+
+#sale:hover
+{
+
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%,#a34313 0%,#903b12 100),
+            #9d4024,
+            #d86e3a,
+            radial-gradient(center 50% 50%,radius 100%,#ea7f4b,#c54e2c);
+}
+
+#sale:pressed
+{
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+#lion {
+    -fx-background-color:
+            rgba(0,0,0,0.08),
+            linear-gradient(#9a9a9a, #909090),
+            linear-gradient(white 0%, #f3f3f3 50%, #ececec 51%, #f2f2f2 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 14px;
+}
+
+#lion:hover {
+    -fx-background-color:
+            linear-gradient(#f2f2f2, #d6d6d6),
+            linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+            linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-background-radius: 8,7,6;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+#bevel {
+    -fx-background-color:
+            linear-gradient(#f2f2f2, #d6d6d6),
+            linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+            linear-gradient(#dddddd 0%, #f6f6f6 50%);
+    -fx-background-radius: 8,7,6;
+    -fx-background-insets: 0,1,2;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+#bevel:hover {
+    -fx-background-color:
+            rgba(0,0,0,0.08),
+            linear-gradient(#9a9a9a, #909090),
+            linear-gradient(white 0%, #f3f3f3 50%, #ececec 51%, #f2f2f2 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 14px;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+#blue {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#7ebcea, #2f4b8f),
+            linear-gradient(#426ab7, #263e75),
+            linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+#blue Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+#blue:hover {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#7ebcea, #2f4b8f),
+            linear-gradient(#426ab7, #263e75),
+            linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight:bold;
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+#windows{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-border-color:#168FC1;
+    -fx-background-color:#168FC1;
+}
+
+#windows:hover{
+    -fx-background-color:#0B729C;
+    -fx-text-fill:white;
+    -fx-font-weight:bold;
+    -fx-border-color:#168FC1;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+#line{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#035F85, #1385B4);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+#line:hover{
+    -fx-background-color: linear-gradient(#1385B4, #035F85);
+    -fx-text-fill:white;
+    -fx-font-weight:bold;
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+#windows8 {
+    -fx-background-color:
+            #707070,
+            linear-gradient(#fcfcfc, #f3f3f3),
+            linear-gradient(#f2f2f2 0%, #ebebeb 49%, #dddddd 50%, #cfcfcf 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+}
+#windows8:hover {
+    -fx-background-color:
+            #a6b5c9,
+            linear-gradient(#303842 0%, #3e5577 20%, #375074 100%),
+            linear-gradient(#768aa5 0%, #849cbb 5%, #5877a2 50%, #486a9a 51%, #4a6c9b 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 7 30 7 30;
+    -fx-text-fill: #242d35;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 12px;
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+#shiny {
+    -fx-background-color:
+            linear-gradient(#ffd65b, #e68400),
+            linear-gradient(#ffef84, #f2ba44),
+            linear-gradient(#ffea6a, #efaa22),
+            linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+            linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 10;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill:  #3f0d12;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+    -fx-font-family: Montserrat;
+}
+#shiny:hover {
+    -fx-background-color:
+            linear-gradient(#e68400, #ffd65b),
+            linear-gradient(#f2ba44, #ffef84),
+            linear-gradient(#efaa22, #ffea6a),
+            linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+            linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+#redline{
+    -fx-text-fill: red;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-border-color:red;
+    -fx-background-color:null;
+}
+
+#redline:hover{
+    -fx-background-color: red;
+    -fx-text-fill:white;
+    -fx-font-weight:bold;
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+#yellow {
+    -fx-background-color:
+            #ecebe9,
+            rgba(0,0,0,0.05),
+            linear-gradient(#dcca8a, #c7a740),
+            linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+            linear-gradient(#f6ebbe, #e6c34d);
+    -fx-background-insets: 0,9 9 8 9,9,10,11;
+    -fx-background-radius: 50;
+    -fx-padding: 15 30 15 30;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-text-fill: #311c09;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.1) , 2, 0.0 , 0 , 1);
+}
+#yellow Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(255,255,255,0.5) , 0, 0.0 , 0 , 1);
+}
+
+#yellow:hover {
+    -fx-background-color:
+            #ecebe9,
+            rgba(0,0,0,0.05),
+            linear-gradient(#dcca8a, #c7a740),
+            linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+            linear-gradient(#f6ebbe, #e6c34d);
+    -fx-background-insets: 0,9 9 8 9,9,0,11;
+    -fx-background-radius: 50;
+    -fx-padding: 15 30 15 30;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-text-fill: #311c09;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.1) , 2, 0.0 , 0 , 1);
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+#red{
+
+    -fx-background-color: linear-gradient(#ff5400,#be1d00);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+
+}
+#red:hover{
+
+    -fx-background-color: linear-gradient(#be1d00,#ff5400);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+#glass{
+    -fx-background-color:
+            #c3c4c4,
+            linear-gradient(#d6d6d6 50%, white 100%),
+            radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+#ipad{
+    -fx-background-color:
+            linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+            linear-gradient(#020b02, #3a3a3a),
+            linear-gradient(#b9b9b9 0%, #c2c2c2 20%, #afafaf 80%, #c8c8c8 100%),
+            linear-gradient(#f5f5f5 0%, #dbdbdb 50%, #cacaca 51%, #d7d7d7 100%);
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 15 30 15 30;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+#ipad Text {
+    -fx-effect: dropshadow( one-pass-box , white , 0, 0.0 , 0 , 1 );
+}
+#ipad:hover {
+    -fx-background-color:
+            linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+            linear-gradient(#020b02, #3a3a3a),
+            linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+            linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+            linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+    -fx-background-insets: 0,1,4,5,6;
+    -fx-background-radius: 9,8,5,4,3;
+    -fx-padding: 15 30 15 30;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+.ipad-pad{
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+#ipad_d {
+    -fx-background-color:
+            linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+            linear-gradient(#020b02, #3a3a3a),
+            linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+            linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+            linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+    -fx-background-insets: 0,1,4,5,6;
+    -fx-background-radius: 9,8,5,4,3;
+    -fx-padding: 10 20 10 20;
+    -fx-font-family: "Montserrat";
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+#ipad_d Text {
+    -fx-effect: dropshadow( one-pass-box , black , 0, 0.0 , 0 , -1 );
+}
+
+.text-15{
+    -fx-font-size: 15px;
+}
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+#dark {
+    -fx-background-color:
+            #090a0c,
+            linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+            linear-gradient(#20262b, #191d22),
+            radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+    -fx-font-weight: bold;
+}
+#dark {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+}
+#dark:hover {
+    -fx-background-color:
+            #090a0c,
+            linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+            linear-gradient(#20262b, #191d22),
+            radial-gradient(center 50% 0%, radius 100%, rgba(255,255,255,0),rgba(114,131,148,0.9) );
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+#rnd{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-border-color:null;
+    -fx-background-color:green;
+    -fx-background-radius: 0%;
+}
+
+#rnd:hover{
+    -fx-background-color: null;
+    -fx-text-fill:green;
+    -fx-font-weight:bold;
+    -fx-background-radius: 0%;
+    -fx-border-color: green;
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+#but{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+#but:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+#shiny_r {
+    -fx-background-color:
+            linear-gradient(#ffd65b, #e68400),
+            linear-gradient(#ffef84, #f2ba44),
+            linear-gradient(#ffea6a, #efaa22),
+            linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+            linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+#shiny_r:hover {
+    -fx-background-color:
+            linear-gradient(#e68400, #ffd65b),
+            linear-gradient(#f2ba44, #ffef84),
+            linear-gradient(#efaa22, #ffea6a),
+            linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+            linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 17px;
+    -fx-padding: 10 20 10 20;
+}
+.btn{
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 16 ;
+    /*-fx-font-weight: medium;*/
+
+}
+.btn:hover{
+    -fx-background-color: linear-gradient(to left bottom, #5f0f40 0%, #310e68 50%);
+    -fx-font-size: 16 ;
+}
+.btnm{
+    -fx-background-color: linear-gradient(to left bottom, #5f0f40 0%, #310e68 50%);
+    -fx-font-family: "Montserrat";
+    -fx-font-size: 16 ;
+
+}
+.gradient{
+    -fx-background-color:linear-gradient(to top,#676767,transparent);
+}
+
+.shadow{
+    -fx-effect:dropShadow(three-pass-box,rgba(0,0,0,0.2),10,0,0,10);
+}
+.shadow:hover{
+    -fx-effect:dropShadow(three-pass-box,rgba(0,207,221,0.5),20,0,0,0);
+}
+
+
+.movieLight{
+    -fx-effect:dropShadow(three-pass-box,rgba(255,215,0,0.5),20,0,0,0);
+
+}
+.background_logo_button{
+    -fx-background-color: #F4F4F4;
+}
+.dark_background{
+    -fx-background-color: #111111;
+}
+.text_color{
+    -fx-text-inner-color:linear-gradient(to left, #00EFD1, #00ACEA);
+}
+.text_search{
+    -fx-text-inner-color: gold;
+    -fx-prompt-text-fill: gold;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Montserrat';
+    -fx-font-weight: normal;
+    -fx-padding: 5px 10px 5px 40px;
+    -fx-border-color: gold;
+    -fx-effect: dropShadow(three-pass-box, gold, 10, 0.1, 0,0,0);
+    -fx-text-fill: gold;
+    -fx-border-radius: 10px;
+
+}
+.moviePane{
+    -fx-border-width: 4;
+    -fx-border-color: linear-gradient(to left bottom,#e50914 0%, #fbb034 20%, #ffdd00 40%, #d425b5 60%, #e50914 80%) ;
+    -fx-background-color: transparent;
+}
+.moviePane:hover{
+    -fx-border-color: linear-gradient(to left bottom,#fbb034  0%, #e50914 20%, #d425b5  40%, #ffdd00 60%, #fbb034  80%) ;
+}
+
+
+
+.text_search:focused{
+    -fx-border-color: linear-gradient(to bottom, #98de5b 0%, #98de5b 50%);
+}
+
+.menu-admin{
+    -fx-background-color: #262626
+;
+}
+.border_radius{
+    -fx-border-radius: 20px;
+}
+
+.tooltip {
+    -fx-background: rgba(30,30,30, 0.8);
+    -fx-text-fill: white;
+    -fx-background-color: rgba(30,30,30,0.8);
+    -fx-background-radius: 6px;
+    -fx-background-insets: 0;
+    -fx-padding: 0.667em 0.75em 0.667em 0.75em; /* 10px */
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.5) , 10, 0.0 , 0 , 3 );
+    -fx-font-size: 16;
+}
+
+.text-menu-top {
+    -fx-font-smoothing-type: lcd;
+    /*-fx-text-fill: linear-gradient(to left bottom, #ffed00 0%, #ff0000 74%);*/
+    -fx-text-fill: linear-gradient(to top ,#b621fe 0%, #1fd1f9 70%);
+    /*-fx-text-fill: white;*/
+    -fx-font-size: 15px;
+    -fx-font-family: Montserrat ;
+    -fx-font-weight: bold;
+    -fx-font-style: normal;
+    /*-fx-background-color:  linear-gradient(to left bottom, #fbb034 0%, #ffdd00 50%);*/
+    -fx-background-color: linear-gradient(to left bottom, #5f0f40 0%, #310e68 70%);
+    -fx-arc-width: 170px;
+    -fx-min-width: 180px;
+    -fx-max-width: 170px;
+    -fx-border-radius: 100px;
+    -fx-start-margin: 20px;
+    -fx-min-height: 50px ;
+    -fx-max-height: 50px ;
+    -fx-padding: 4px;
+
+}
+.text-menu-top:pressed{
+
+}
+.text-menu-top:hover{
+    -fx-background-color: linear-gradient(to left bottom,#310e68 0%, #5f0f40  70%);
+}
+.text-profile{
+    -fx-arc-width: 150px;
+    -fx-min-width: 160px;
+    -fx-max-width: 160px;
+    -fx-padding: 0px 0px 0px 13px;
+}
+.text-cart{
+    -fx-text-fill: linear-gradient(to top ,#b621fe 0%, #1fd1f9 70%);
+    -fx-font-size: 18px;
+    -fx-font-family: Montserrat ;
+    -fx-font-weight: bold;
+}
+
+.text-gradient{
+    -fx-text-fill: linear-gradient(to bottom,#b621fe 0%, #1fd1f9 50%);
+    -fx-font-weight: normal;
+    -fx-font-size: 14px;
+    -fx-font-family: Montserrat;
+}
+
+.borderStage{
+    -fx-border-color: gold;
+    -fx-border-width: 3;
+}
+.text-title{
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: linear-gradient(to bottom,#b621fe 0%, #1fd1f9 50%);
+    -fx-font-size: 30px;
+    -fx-font-family: Montserrat ;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+.text-body{
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: #fff;
+    -fx-font-size: 12px;
+    -fx-font-family: Montserrat ;
+    -fx-font-weight: bold;
+    -fx-font-style: normal;
+}
+.text-subtitle{
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: linear-gradient(to bottom,#b621fe 0%, #1fd1f9 50%);
+    -fx-font-size: 13px;
+    -fx-font-family: Montserrat ;
+    -fx-font-weight: bold;
+    -fx-font-style: normal;
+}
+.text-18{
+    -fx-font-size: 18px;
+    -fx-wrap-text: true;
+}
+.text-cart{
+    -fx-font-smoothing-type: lcd;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-family: Montserrat ;
+    -fx-font-weight: normal;
+    -fx-font-style: normal;
+}
+
+.order_background{
+    -fx-background-color: linear-gradient(to left bottom, #5f0f40 0%, #310e68 70%);
+
+;
+}
+.text-product-title{
+    -fx-font-family: Montserrat;
+    -fx-text-fill:  linear-gradient(to bottom,#b621fe 0%, #1fd1f9 50%);
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-wrap-text: true;
+
+}
+.text-product-body{
+    -fx-font-family: Elephant;
+    -fx-text-fill:  linear-gradient(to bottom,#b621fe 0%, #1fd1f9 50%);
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+
+
+}
+.text-product-price{
+    -fx-font-family: Century;
+    -fx-text-fill:  gold;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-font-style: normal;
+}
+
+
+
+.icon-gradient{
+    -fx-text-fill: linear-gradient(to bottom,#b621fe 0%, #1fd1f9 50%);
+
+}
+
+.btn_hide{
+    -fx-opacity: 0.4;
+}
+.btn_hide:hover{
+    -fx-opacity: 1;
+}
+.icon{
+    -fx-background-color: #999;
+}
+.border_bottom{
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #676767;
+}
+.text_menu{
+    -fx-text-inner-color:#f8f8f8;
+    -fx-prompt-text-fill: #f8f8f8;
+    -fx-font-size: 12pt;
+}
+.menu-button > .arrow-button {
+    -fx-padding: 0;
+}
+
+.menu-button > .arrow-button > .arrow {
+    -fx-padding: 0;
+}
+/*----------------------------------------------------*/
+.menu-item {
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+    -fx-text-fill: black;
+    -fx-background: #fff ;
+}
+.menu-item .label{
+    -fx-font-size: 17.0 pt;
+    -fx-text-fill: #565656;
+}
+/*.context-menu {
+    -fx-background-insets: 0.0, 1.0, 2.0;
+    -fx-background-radius: 0.0 6.0 6.0 6.0, 0.0 5.0 5.0 5.0, 0.0 4.0 4.0 4.0;
+    -fx-opacity: 0.9;
+}*/
+
+.sp_cart_icon{
+    -fx-opacity: 0;
+    -fx-background-radius: 5em;
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    -fx-max-width: 50px;
+    -fx-max-height: 50px;
+    -fx-background-color: rgba(0,0,0,0.001);
+    -fx-effect:dropShadow(three-pass-box,rgba(235,127,33,0.7),20,0,0,0);
+}
+.sp_cart_icon:hover{
+    -fx-background-color: rgba(0,0,0,0.001);
+    -fx-effect:dropShadow(three-pass-box,rgba(235,127,33,0.5),20,0,0,0);
+}
+.shadow:hover .sp_cart_icon{
+    -fx-opacity: 1;
+}
+
+.contend_view2{
+    -fx-background-color: transparent;
+}
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+/*.text-area .content {
+    -fx-background-color: #fff ;
+}*/
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: white;
+    -fx-background-radius: 5em;
+}
+/*.combo-box{
+    -fx-background-color: #f8f8f8 ;
+}*/
+.text-22{
+    -fx-font-size: 22;
+}
+.combo-box .combo-box-popup .list-view, .combo-box .combo-box-popup .list-cell {
+    -fx-background-color: #222222 ;
+    -fx-text-fill: #f8f8f8;
+    -fx-font-family: "Calibri" ;
+}
+.combo-box .combo-box-popup .list-cell:hover {
+    -fx-text-fill: yellow ;
+    -fx-background-color: #676767 ;
+}
+
+.combo-box .cell{
+    -fx-text-fill: #fff;
+}
+.text_category{
+    -fx-prompt-text-fill: gold!important;
+    -fx-font-size: 11px;
+    -fx-font-family:  'Montserrat';
+    -fx-font-weight: normal;
+    -fx-border-width: 1px;
+    -fx-border-color: gold!important;
+    -fx-padding: 5px 10px 5px 10px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-effect: dropShadow(three-pass-box, gold, 10, 0.1, 0,0,0);
+    -fx-text-fill: gold !important;
+    -fx-border-radius: 10px;
+
+}
+
+.text_category:focused{
+    -fx-border-color: gold;
+}
+.slider .track {
+    -fx-background-color: gold;
+
+}
+.slider:vertical .track {
+    -fx-effect: dropShadow(three-pass-box, gold, 10, 0.1, 0,0,0);
+}
+
+.slider .thumb {
+    /*-fx-background-color: gold;*/
+    -fx-pref-height: 20px;
+    -fx-pref-width: 10px;
+    -fx-background-color: gold;
+    -fx-effect: dropShadow(three-pass-box, magenta, 10, 0.1, 0,0,0);
+
+
+}
+.border_radius_customer{
+    -fx-background-color: #2969c0;
+    -fx-background-radius: 60px;
+
+    -fx-border-radius: 50px;
+    -fx-border-width: 5px;
+    -fx-border-color: #333;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+}
+
+.feedback_text{
+    -fx-text-inner-color:linear-gradient(to top ,#b621fe 0%, #1fd1f9 70%);
+    -fx-prompt-text-fill: linear-gradient(to top ,#b621fe 0%, #1fd1f9 70%);
+    -fx-border-width: 1;
+    -fx-border-color: #FFE971;
+    -fx-font-size: 10px;
+}
+.border_all{
+    -fx-border-width: 2;
+    -fx-border-color: #FFE971;
+}
+.btn_submit_feedback{
+    -fx-background-color:linear-gradient(to top,#00ACEA,#00EFD1);
+    -fx-border-width: 2;
+    -fx-border-color: #008080;
+    -fx-text-fill: #444;
+}
+.btn_submit_feedback:hover{
+    -fx-background-color:linear-gradient(to top,#00CFDD,#00EFD1);
+}
+.fw-normal{
+    -fx-font-weight: normal;
+}
+.fw-weight{
+    -fx-font-weight: bold;
+}
+.f-monterrat{
+    -fx-font-family:  'Montserrat';
+}
+.btn-order-delete{
+    -fx-text-fill: #fff;
+    -fx-background-color: linear-gradient(to left bottom, #f71735 0%, #db3445 74%);
+
+
+
+}
+.movie{
+    -fx-effect:dropShadow(three-pass-box,rgba(0,0,0,0.2),10,0,0,10);
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+.text-17{
+    -fx-font-size: 17px;
+}
+.text-12{
+    -fx-font-size: 12px;
+}
+.table-view {
+    -fx-background-color: transparent;
+
+}
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 0 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+    -fx-cell-size: 2.0em;
+}
+.table-row-cell:hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color: #669999;
+}
+.table-row-cell:selected {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color: #669999;
+}
+.table-row-cell:odd{
+    -fx-background-color: #93f9b911;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell:even{
+    -fx-background-color: #1dbbdd11;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+
+
+}
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+}
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  linear-gradient(to right, #1dbbdd44, #93f9b944);
+}
+.table-row-cell {
+    -fx-background-color: #81c483;
+    -fx-background-radius: 15px;
+}
+.detail_feedback_admin{
+    -fx-background-color:linear-gradient(  #fff, #E2F0F8);
+    -fx-border-color:  linear-gradient(to bottom, #fbb034 0%, #ffdd00 50%);
+    -fx-border-width: 2px;
+    -fx-background-radius: 10px 10px 10px 10px;
+    -fx-text-fill: linear-gradient(to left bottom, #5f0f40 0%, #310e68 70%);
+}
+.back_ground_admin{
+    -fx-background-color: #00ACEA ;
+}
+.button_bluenavy{
+    -fx-background-color: #3C295E;
+    -fx-text-fill: #f8f8f8;
+
+}
+.button_danger{
+    -fx-background-color: #C82333;
+    -fx-text-fill: #f8f8f8;
+}
+.button_warning{
+    -fx-background-color: #E0A800;
+    -fx-text-fill: #f8f8f8;
+}
+.button_successfully{
+    -fx-background-color: #218838;
+    -fx-text-fill: #f8f8f8;
+    -fx-font-size: 15px;
+}
+
+.button_info{
+    -fx-background-color: #138496;
+    -fx-text-fill: #f8f8f8;
+}
+.button_category{
+    -fx-background-color: #00CFDD;
+}
+
+
+.check_box_cart .box {
+
+    -fx-background-color: black;
+    -fx-border-color: #fff;
+    -fx-border-radius:1px;
+
+}
+
+.check-box:selected .mark {
+
+    -fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+
+    -fx-background-color: #00CFDD;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-body-color: linear-gradient(to bottom, #ffdd00 ,#fbb034);
+}
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    /* interpolate color between yellow and red based on first color brightness */
+    -fx-body-color: linear-gradient(to bottom, #f9d976 ,#f39f86);
+}
+
+.spinner .increment-arrow-button:hover:pressed,
+.spinner .decrement-arrow-button:hover:pressed,
+.spinner .increment-arrow-button:pressed,
+.spinner .decrement-arrow-button:pressed {
+    /* interpolate color between yellow and red based on first color brightness */
+    -fx-body-color: linear-gradient(to bottom, #20ded3 , #f6fba2);
+}
+
+.btn_delete_cart{
+    /*    -fx-background-color:#00CFDD;*/
+    -fx-text-fill: #fff;
+}
+.background-linear{
+    -fx-background-color: linear-gradient(  #fff, #E2F0F8)  ;
+}
+.btn_delete_cart:hover{
+    -fx-opacity: 0.7;
+}
+
+.news_game{
+    -fx-background-color: #2D3138;
+    /*-fx-background-radius: 10;*/
+    -fx-effect:dropShadow(three-pass-box,rgba(0,0,0,0.2),10,0,0,10);
+}
+
+.btn-click{
+    -fx-background-color:#333;
+    /*-fx-background-radius:20;*/
+}
+.textShadow{
+    -fx-effect:  dropShadow(three-pass-box,gold,6,0.1,0,0);
+}
+.hbox-homeadmin{
+    -fx-background-color: #E9E9E9;
+    -fx-background-radius: 20;
+}
+.pane-homeadmin{
+    -fx-background-color: #222222;
+}
+.item_press{
+    -fx-opacity: 1;
+}
+.item_press:focused{
+    -fx-opacity: 0.6;
+}
+.text_fff{
+    -fx-text-fill: #fff;
+    -fx-prompt-text-fill: #888;
+    /*-fx-text-inner-color:#f8f8f8;*/
+}
+
+.topUpCoins{
+    -fx-effect: dropshadow(three-pass-box, gold, 10, 0.1, 0, 0);
+    -fx-border-color: gold;
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+}
+.txtTUCoin{
+    -fx-font-family: Montserrat;
+    -fx-font-size: 16px;
+    -fx-text-fill: gold;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, gold, 4, 0.1, 0,0);
+
+}
+.txtCodeTUCoin{
+    -fx-font-size: 15px;
+    -fx-text-fill: gold;
+    -fx-prompt-text-fill: gold;
+    -fx-font-family: Montserrat ;
+    -fx-border-color: gold;
+    -fx-padding: 10 20;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, gold, 4, 0.1, 0,0);
+
+}
+
+#myTable .table-cell{
+    -fx-alignment: center;
+}
+.notification-bar > .pane {
+    -fx-background-color: linear-gradient(to left bottom, #5f0f40 0%, #310e68 70%) !important;
+    -fx-padding: 30 0 10 40 !important;
+    -fx-font-family: Montserrat;
+
+}
+

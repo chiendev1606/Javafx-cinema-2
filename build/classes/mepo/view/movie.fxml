@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="240.0" maxWidth="150.0" minHeight="240.0" minWidth="150.0" onMouseClicked="#GameClicked" prefHeight="318.0" prefWidth="147.0" style="-fx-effect: dropShadow(three-pass-box, gold, 3, 0.05, 0,0);" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mepo.Controller.MovieController">
+   <children>
+      <ImageView fx:id="img" fitWidth="130.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropShadow(three-pass-box, gold, 3, 0.05, 0,0);" translateY="-4.0">
+         <image>
+            <Image url="@../../img/1BIoJGKbXjdFDAqUEiA2VHqkK1Z.jpg" />
+         </image></ImageView>
+      <JFXButton layoutX="87.0" layoutY="10.0" onAction="#btnAddToCart" prefHeight="38.0" prefWidth="46.0" style="-fx-background-color: transparent;" text=" ">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="sp_cart_icon" x="10.0" y="10.0">
+               <image>
+                  <Image url="@../../img/icon/add-cart.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <HBox layoutX="44.0" layoutY="202.0" prefHeight="31.0" prefWidth="106.0">
+         <children>
+            <Label fx:id="price" prefHeight="28.0" prefWidth="51.0" styleClass="text-product-price" text="63" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="8.0" />
+               </padding>
+            </Label>
+            <ImageView fitHeight="31.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
+               <image>
+                  <Image url="@../../img/icon/coin-flip-27.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+   <styleClass>
+      <String fx:value="shadow" />
+      <String fx:value="moviePane" />
+   </styleClass>
+</Pane>

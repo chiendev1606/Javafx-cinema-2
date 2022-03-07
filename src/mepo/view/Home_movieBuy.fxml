@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="985.0" style="-fx-border-color: linear-gradient(to bottom, #fbb034 0%, #ffdd00 50%);" styleClass="dark_background" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mepo.Controller.Home_moviebuyController">
+    <children>
+        <AnchorPane maxHeight="700.0" prefHeight="700.0" prefWidth="985.0" style="-fx-border-width: 1px; -fx-border-color: linear-gradient(to bottom, #fbb034 0%, #ffdd00 50%);" styleClass="dark_background" stylesheets="@Style.css">
+            <children>
+                <GridPane layoutX="185.0" layoutY="8.0" maxHeight="521.0" maxWidth="972.0" minHeight="379.0" minWidth="760.0" prefHeight="513.0" prefWidth="794.0" style="-fx-border-color: linear-gradient(to bottom, #fbb034 0%, #ffdd00 50%); -fx-border-width: 2;" styleClass="textShadow">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+               <children>
+                  <WebView fx:id="webView" prefHeight="509.0" prefWidth="758.0" />
+               </children>
+                </GridPane>
+            <VBox layoutY="8.0" prefHeight="625.0" prefWidth="183.0">
+               <children>
+                  <ImageView fx:id="movieImg" fitHeight="150.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropShadow(three-pass-box,gold,10,0.1,0,0);">
+                     <VBox.margin>
+                        <Insets left="34.0" top="20.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../../img/darkspell.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox prefHeight="77.0" prefWidth="180.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropShadow(three-pass-box,gold,10,0.1,0,0);">
+                           <image>
+                              <Image url="@../../img/icon/film-reel.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="19.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="nameMovie" prefHeight="65.0" prefWidth="137.0" styleClass="textShadow" text="shang chi" textFill="GOLD" wrapText="true">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="13.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="37.0" prefWidth="161.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="textShadow">
+                           <image>
+                              <Image url="@../../img/icon/categories.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="category" prefHeight="31.0" prefWidth="128.0" styleClass="textShadow" text="action" textFill="GOLD">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Montserrat Regular" size="11.0" />
+                           </font></Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="22.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="152.0" prefWidth="171.0">
+                     <children>
+                        <ScrollPane prefHeight="147.0" prefWidth="151.0">
+                           <content>
+                              <Text fx:id="desc" fontSmoothingType="LCD" lineSpacing="1.2" strokeType="OUTSIDE" strokeWidth="0.0" text="   The film, based on Marvel Comics, will focus on Shang-Chi; 'Master of Kung-Fu'. Shang-Chi is a Kung Fu master, a master of martial arts. Shang-Chi's strength comes from thousands of hours of hard work and intense self-discipline. This martial arts superhero was trained by his own father to become a professional assassin and inherit his crime syndicate. Shang-Chi is prob" wrappingWidth="135.4700927734375">
+                                 <fill>
+                                    <LinearGradient endX="0.6412699381510416" endY="1.0" startX="0.20634919575282507" startY="0.3492063249860491">
+                                       <stops>
+                                          <Stop color="#1fd1f9" />
+                                          <Stop color="#1fd1f9" offset="0.19412515964240087" />
+                                          <Stop color="#b621fe" offset="0.6958565390844098" />
+                                          <Stop color="#b321fcfa" offset="1.0" />
+                                       </stops>
+                                    </LinearGradient>
+                                 </fill>
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Text>
+                           </content>
+                           <padding>
+                              <Insets top="15.0" />
+                           </padding>
+                        </ScrollPane>
+                     </children>
+                     <padding>
+                        <Insets left="27.0" right="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="90.0" prefWidth="183.0">
+                     <children>
+                        <JFXTextArea fx:id="txtFeedback" focusColor="#00efd1" prefHeight="90.0" prefWidth="138.0" promptText="Enter your feedback here" styleClass="feedback_text" unFocusColor="#00acea">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Italic" size="15.0" />
+                           </font>
+                        </JFXTextArea>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label fx:id="txtAlertFeedback" prefHeight="18.0" prefWidth="156.0" textFill="#cd2c2c">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="14.0" />
+                     </VBox.margin>
+                  </Label>
+                  <JFXButton id="shiny" onAction="#btnSubmit" prefHeight="16.0" prefWidth="94.0" style="-fx-font-size: 10; -fx-padding: 5 10;" styleClass="textShadow" text=" SEND" textFill="#f8f8f8">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="45.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/icon/sendEmail.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+                    <ScrollPane layoutX="252.0" layoutY="538.0" prefHeight="109.0" prefWidth="538.0" styleClass="border_all">
+               <content>
+                            <GridPane fx:id="gridFeedback" prefHeight="30.0" prefWidth="44.0">
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                            </GridPane>
+               </content>
+                    </ScrollPane>
+                    <JFXButton layoutX="798.0" layoutY="538.0" prefHeight="18.0" prefWidth="105.0" styleClass="textShadow" text=" Reviews " textFill="GOLD">
+                        <graphic>
+                            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" styleClass="textShadow">
+                                <image>
+                                    <Image url="@../../img/icon/feedback.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                        <font>
+                            <Font name="Montserrat Regular" size="12.0" />
+                        </font>
+                    </JFXButton>
+            <JFXButton id="shiny" layoutX="474.0" layoutY="656.0" onAction="#back" prefHeight="27.0" prefWidth="124.0" style="-fx-padding: 5 10; -fx-font-size: 11;" styleClass="textShadow" text="BACK">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/icon/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

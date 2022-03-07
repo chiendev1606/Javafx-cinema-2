@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Mepo.jnlp">
+  <information>
+    <title>Mepo</title>
+    <vendor>mepo</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Mepo.jar" size="2300351" download="eager" />
+    <jar href="lib\Notify-3.7.jar" size="107185" download="eager" />
+    <jar href="lib\TrayTester.jar" size="52070" download="eager" />
+    <jar href="lib\activation-1.1.1.jar" size="69409" download="eager" />
+    <jar href="lib\avalon-framework-4.1.3.jar" size="63966" download="eager" />
+    <jar href="lib\commons-collections4-4.1.jar" size="751238" download="eager" />
+    <jar href="lib\commons-logging-1.1.jar" size="52915" download="eager" />
+    <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib\dom4j-1.6.1.jar" size="313898" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\jBCrypt-0.4.1.jar" size="17570" download="eager" />
+    <jar href="lib\javax.mail.jar" size="659033" download="eager" />
+    <jar href="lib\jfoenix-8.0.10.jar" size="2710207" download="eager" />
+    <jar href="lib\jfreechart-1.5.3.jar" size="1604073" download="eager" />
+    <jar href="lib\jfreechart-fx-1.0.0.jar" size="27962" download="eager" />
+    <jar href="lib\log4j-1.2.13.jar" size="358180" download="eager" />
+    <jar href="lib\logkit-1.0.1.jar" size="72150" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.26.jar" size="2462364" download="eager" />
+    <jar href="lib\ooxml-schemas-1.0.jar" size="14003759" download="eager" />
+    <jar href="lib\openxml4j-1.0-beta.jar" size="142882" download="eager" />
+    <jar href="lib\poi-3.17.jar" size="2701171" download="eager" />
+    <jar href="lib\poi-ooxml-3.17.jar" size="1479023" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-3.17.jar" size="5924600" download="eager" />
+    <jar href="lib\xmlbeans-2.6.0.jar" size="2730866" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="mepo.main"  name="Mepo" />
+  <update check="always"/>
+</jnlp>
